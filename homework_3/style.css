@@ -1,0 +1,52 @@
+tr {
+    text-align: center;
+}
+
+.group {
+    background-color: #eaecf0;
+    text-align: center;
+    color: blue;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.blue {
+    background-color: #c0ffff;
+}
+
+.red {
+    background-color: #FF6666;
+}
+
+.orange {
+    background-color: #FFDEAD;
+}
+
+.sand {
+    background-color: #cccc99;
+}
+
+.yellow {
+    background-color: #ffff99;
+}
+
+.gray {
+    background-color: #cccccc;
+}
+
+.pink {
+    background-color: #ffc0c0;
+}
+
+.purple {
+    background-color: #FFBFFF;
+}
+
+.violet {
+    background-color: #ef99cc;
+}
+
+
+
