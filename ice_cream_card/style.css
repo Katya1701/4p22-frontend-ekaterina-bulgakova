@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Inter-Light'; 
+	src: url(fonts/Inter/Inter-Light.otf);
+}
+
+@font-face {
+	font-family: 'Inter-Medium'; 
+	src: url(fonts/Inter/Inter-Medium.otf);
+}
+
+@font-face {
+	font-family: 'Inter-Black'; 
+	src: url(fonts/Inter/Inter-Black.otf);
+}
+
+body {
+    background-color: #FEAFC3;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Inter-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    color: #2D3440;
+}
+
+.container {
+
+    margin: 130px 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    margin: auto;
+    width: 270px;
+    height: 281px;
+    background: #FCFCFC;
+    border-radius: 8px;
+}
+
+.img {
+    height: 117px;
+}
+
+.img img {
+    display:block;
+    margin:auto;
+    position: relative;
+    top: -51px;
+    filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
+}
+
+.title {
+    margin-top: 16px;
+    text-align: center;
+    color: #2D3440;
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.text {
+    margin-top: 8px;
+    text-align: center;
+    color: #565C66;
+    font-family: 'Inter-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.price_block {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price {
+    margin-left: 40px;
+    margin-right: 73px;
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+button {
+    border: none;
+    background-color: #FCFCFC;
+    cursor: pointer;
+}
+
+
