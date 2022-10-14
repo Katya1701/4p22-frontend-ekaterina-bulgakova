@@ -12,6 +12,7 @@ body {
 /* header */
 
 .header {
+    margin-right: 20%;
     width: 100%;
     height: 90px;
     
@@ -35,8 +36,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 54px;
+    font-size: max(min(54px,4vw),38px);
     line-height: 63px;
+    left: 2%;
 
     color: #FFFFFF;
 }
@@ -50,6 +52,7 @@ body {
 /* sidebar */
 
 .sidebar-section {
+    margin-left: 2%;
     position: sticky;
     top: 130px;
 
@@ -57,7 +60,7 @@ body {
     width: 10%;
     height: 100%;
     min-height: 362px;
-    min-width: 300px;
+    min-width: 275px;
     border-right: 2px solid #C4C4C4;
 }
 
@@ -68,7 +71,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: max(min(28px,3vw),24px);
     line-height: 33px;
 }
 
@@ -78,7 +81,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: max(min(24px,3vw),18px);
     line-height: 28px;
     text-decoration-line: underline;
     cursor: pointer;
@@ -89,6 +92,7 @@ body {
 
 .list-section {
     width: 90%;
+    margin-right: 30%;
 }
 
 .list-section__shortNeme {
@@ -115,7 +119,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size:  max(min(28px,3vw),24px);
     line-height: 33px;
     color: #000000;
 }
