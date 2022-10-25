@@ -39,7 +39,7 @@ body {
     padding-top: calc(12 / 1440 * 100vw);
 }
 
-.form-title {
+.container-title {
     padding-top: calc(26 / 1440 * 100vw);
     text-align: center;
     font-family: 'Roboto';
@@ -192,7 +192,7 @@ body {
         overflow: hidden;
     }
 
-    .form-title {
+    .container-title {
         margin-top: 38px;
         
         font-weight: 700;
