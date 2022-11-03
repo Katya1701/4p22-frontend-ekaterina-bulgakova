@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Калькулятор</title>
+</head>
+<body>
+
+    <div class="container">
+            
+        <form class="calculator" action="#">
+            <div class="calculator-title">Калькулятор</div>
+            
+                <input class="calculator-input calculator-operand__first" type="number" name="operand1" id="operand1" placeholder="Введите первое число">
+                <input class="calculator-input calculator-operator" type="text" name="operator" id="operator" placeholder="Введите знак операции">
+                <input class="calculator-input calculator-operand__second" type="number" name="operand2" id="operand2" placeholder="Введите второе число">
+
+            <div class="calculator-button">
+                <button class="calculator-button__submit" type="submit">Выполнить расчет</button>
+            </div>
+
+            <div class="calculator-result">
+                <input class="calculator-result__input" type="text">
+            </div>
+        </form>
+
+    </div> <!--container-->
+
+    <script src="../homework_8/script.js"></script>
+</body>
+</html>
