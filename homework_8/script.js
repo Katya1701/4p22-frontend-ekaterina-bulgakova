@@ -7,7 +7,9 @@ const button = document.querySelector('.calculator-button__submit');
 const resultContainer = document.querySelector('.calculator-result__input');
 
 button.addEventListener('click', (event) => {
+
     event.preventDefault();
+
     if (operandInputFirst.value === '') {
         resultContainer.value = 'Первое число не указано';
         throw new Error('Первое число не указано');
@@ -19,20 +21,22 @@ button.addEventListener('click', (event) => {
         throw new Error('Второе число не указано');
     }
 
+    const firstNum = Number(operandInputFirst.value);
+    const secondNum = Number(operandInputSecond.value);
     let result = null;
 
     switch (operatorInput.value) {
         case '+':
-            operandInputFirst.value + operandInputSecond.value;
+            result = firstNum + secondNum;
             break;
         case '-':
-            operandInputFirst.value - operandInputSecond.value;
+            result = firstNum - secondNum;
             break;
         case '/':
-            operandInputFirst.value / operandInputSecond.value;
+            result = firstNum / secondNum;
             break;
         case '*':
-            operandInputFirst.value * operandInputSecond.value;
+            result = firstNum * secondNum;
             break;
         default:
             resultContainer.value = 'Программа не поддерживает такую операцию';
