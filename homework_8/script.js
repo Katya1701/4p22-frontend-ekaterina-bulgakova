@@ -15,34 +15,29 @@ button.addEventListener('click', (event) => {
         resultContainer.value = 'Не введён знак';
         throw new Error('Не введён знак');
     } else if (operandInputSecond.value === '') {
-        resultContainer.value = 'Второе число не указаано';
-        throw new Error('Второе число не указаано');
+        resultContainer.value = 'Второе число не указано';
+        throw new Error('Второе число не указано');
     }
 
-    const firstNum = Number(operandInputFirst.value);
-    const secondNum = Number(operandInputSecond.value);
+    let result = null;
 
-    if (typeof(firstNum) !== 'number' 
-        && typeof(secondNum) !== 'number') 
-    {
-        resultContainer.value = 'Некорректный ввод чисел';
-        throw new Error('Некорректный ввод чисел');
+    switch (operatorInput.value) {
+        case '+':
+            operandInputFirst.value + operandInputSecond.value;
+            break;
+        case '-':
+            operandInputFirst.value - operandInputSecond.value;
+            break;
+        case '/':
+            operandInputFirst.value / operandInputSecond.value;
+            break;
+        case '*':
+            operandInputFirst.value * operandInputSecond.value;
+            break;
+        default:
+            resultContainer.value = 'Программа не поддерживает такую операцию';
+            throw new Error('Программа не поддерживает такую операцию');
     }
-
-    if (operatorInput.value !== '+'
-        && operatorInput.value !== '-'
-        && operatorInput.value !== '/'
-        && operatorInput.value !== '*')
-    {
-        resultContainer.value = 'Программа не поддерживает такую операцию';
-        throw new Error('Программа не поддерживает такую операцию');
-    }
-
-    const result = eval(`
-        ${firstNum} 
-        ${operatorInput.value} 
-        ${secondNum}
-    `);
 
     if (result !== Infinity
         && result !== 'undefined')
